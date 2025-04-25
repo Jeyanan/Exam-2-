@@ -49,7 +49,7 @@ public class Exam2
 }
 
 
-    //Question 25 
+    //Question 25 exam 2 
 
 public static void analyzeTemparature(ArrayList<Double> temps) {
     int feverCount = 0;
