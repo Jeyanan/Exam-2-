@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * Write a description of class Exam2 here.
@@ -16,9 +17,16 @@ public class Exam2
     public Exam2()
     {
         // initialise instance variables
-        x = 0;
+        ArrayList<Double> temperatures = new ArrayList<Double>();
         
+        temperatures.add(37.5);
+        temperatures.add(32.5);
+        temperatures.add(37.9);
+        temperatures.add(39.3);
+        temperatures.add(47.0);
+        temperatures.add(7.1);
         
+        analyzeTemparature(temperatures);
     }
 
     /**
@@ -27,30 +35,36 @@ public class Exam2
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
-    {
-        // Question 24 
-        String str1 = "Jeyanan"
-        String str2 = "Jeyanan"
-        if (str 1,equals (str 2))
-        {
-               system.out println ("strings are equal ")
-        }
-        else  
+   public int sampleMethod(int y)
+{
+    // Question 24
+    String str1 = "Jeyanan";
+    String str2 = "Jeyanan";
+    if (str1.equals(str2)) {
+        System.out.println("strings are equal");
+    } else {
+        
     }
-//question 25 
-   public static void analyse Temparature( Arraylist<double> temps{
-     int fever count = 0
-     for (double temp ; temps){
-         if(temps 37.5){
-             for count :
-         }
-        if (temps) max temp)
-        max temp;
-        System.out println("max fever")
-        System.out println("fever count")
-    }
+    return y;
 }
 
 
+    //Question 25 
+
+public static void analyzeTemparature(ArrayList<Double> temps) {
+    int feverCount = 0;
+    double maxTemp = Double.MIN_VALUE;
+
+    for (double temp : temps) {
+        if (temp > 37.5) {
+            feverCount++;
+        }
+        if (temp > maxTemp) {
+            maxTemp = temp;
+        }
+    }
+
+    System.out.println("max fever: ");
+    System.out.println("fever count: ");
+}
 }
